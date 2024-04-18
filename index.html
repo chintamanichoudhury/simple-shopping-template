@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+                                                /* header-start */
+        header{
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            padding: 22px;
+            border-bottom: 1px solid gray;
+            background-color: rgb(241, 235, 235);
+        }
+        .brand{
+            margin-left: 100px;
+            display: flex;
+            align-items: center;
+        }
+        .header-div{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+            margin-right: 100px;
+            grid-gap: 10px;
+            font-size: 25px;
+            align-items: center;
+        }
+        .header-div span{
+            margin-left: 7px;
+        }
+        .items{
+            display: inline-block;
+            text-align: center;
+            height: 18px;
+            width: 18px;
+            font-size: 15px;
+            border-radius: 15px;
+            background-color: red;
+            color: white;
+            position: absolute;
+            right: -8px;
+            top: -7px;
+        }
+        .cart{
+            position: relative;
+        }
+        .search{
+            border-radius: 5px;
+            border: 1px solid gray;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 200px;
+            height: 30px;
+        }
+                                                /* header end */
+                                                
+                                                /* section start */
+        section{
+            display: grid;
+            grid-template-columns: 1.5fr 10.5fr;
+            height: 630px;
+        }
+        ol{
+            list-style: none;
+
+        }
+        li{
+            margin: 15px;
+            border: 1px solid lightgray;
+            margin-left: -20px;
+            border-radius: 5px;
+        }
+        nav{
+            background-color: rgb(241, 235, 235);
+            border-right: 1px solid gray;
+            height: 99.4%;
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+        }
+        nav a:hover{
+            color: rgb(238, 124, 143);
+        }
+        footer{
+            height: 380px;
+            background-color: rgb(241, 235, 235);
+            margin-top: -4px;
+            border-top: 1px solid gray;
+        }
+        .foot-one{
+            display: grid;
+            grid-template-columns: .2fr 3fr 7fr .2fr ;
+            grid-gap: 80px;
+            margin-top: 100px;
+            color: black;
+        }
+        .foot-two{
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+        .cd-one span{
+            margin-top: 10px;
+        }
+        .cd-one{
+            display: flex;
+            flex-direction: column;
+        }
+        .cd-one a{
+            text-decoration: none;
+            color: black;
+            cursor: grab;
+        }
+        .title{
+            font-weight: bold;
+        }
+        .brands{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center ;
+        }
+        .brand-name{
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 40px;
+            
+        }
+        .brand-name-icon{
+            margin-left: 25px;
+        }
+        .brand-name-icon span{
+
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="public/images/brand-logo.png" alt="" width="180px" height="50px">
+        </div>
+        <div>
+            <div class="search"> <span style="color: gray; margin-left: 5px;">search here</span><span class="bi bi-search"></span></div>
+        </div>
+        <div class="header-div" >
+            <span  style="font-size: 30px;" class="bi bi-person"></span>
+            <span class="cart">
+            <span class="bi bi-heart" ></span>
+            <span class="items">7</span>
+            </span>
+            <span class="cart">
+            <span class="bi bi-cart"></span>
+            <span class="items">2</span>
+            </span>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <ol>
+                <li><a target="framebody" href="home.html"><span class="bi bi-house-fill"></span>Home</a></li>
+                <li><a target="framebody" href="men.html"><span class="bi bi-person-standing"></span>Men</a></li>
+                <li><a target="framebody" href="women.html"><span class=" bi bi-person-standing-dress"></span>Women</a></li>
+                <li><a target="framebody" href="kids.html"><span class="bi bi-person-walking"></span>Kids</a></li>
+                <li><a target="framebody" href="mobile.html"><span class="bi bi-phone-fill"></span>Mobiles</a></li>
+            </ol>
+        </nav>
+        <main>
+            <iframe src="home.html" frameborder="0" name="framebody" width="99.9%" height="99.1%"></iframe>
+        </main>
+    </section>
+    <footer>
+
+        <div class="foot-one">
+            <div></div>
+            <div class="brands">
+                <div class="brand-name">Shopping Zone.</div>
+                <div class="brand-name-icon">
+                    <span class="bi bi-facebook"></span>
+                    <span class="bi bi-instagram"></span>
+                    <span class="bi bi-twitter-x"></span>
+                    <span class="bi bi-youtube"></span>
+                </div>
+            </div>
+            <div class="foot-two">
+                <div class="cd-one">
+                    <div class="title">SUPPORT</div>
+                    <span>Contact Us</span>
+                    <span>FAQs</span>
+                    <span>Size Guide</span>
+                    <span>Shipping & Returns</span>
+                </div>
+                <div class="cd-one">
+                    <div class="title">SHOP</div>
+                    <span><a href="men.html" target="framebody">Men's Fashion</a></span>
+                    <span><a href="women.html" target="framebody">Women's Fashion</a></span>
+                    <span><a href="kids.html" target="framebody">Kid's Fashion</a></span>
+                    <span><a href="mobile.html" target="framebody">Mobile</a></span>
+                </div>
+                <div class="cd-one">
+                    <div class="title">CONTACT</div>
+                    <span><a href="tel:1-202-555-0105">1-202-555-0105</a></span>
+                    <span><a href="tel:1-202-555-0106">1-202-555-0106</a></span>
+                    <span><a href="mailto:help@shoppingzone.com">help@shoppingzone.com</a></span>
+                    
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1.5fr 9fr 1.5fr;">
+        <div></div>
+        <div style="border-bottom: 2px solid gray; margin-top: 50px;"></div>
+        <div></div>
+        </div>
+        <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px;">
+            <div style="font-size: 14px;">© 2019 All rights reserved. Designed by Chintamani choudhury.</div>
+            <div><img src="public/images/cards.jpg" alt="" width="300px" height="40px"></div>
+        </div>
+    </footer>
+</body>
+</html>

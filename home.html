@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .welcome{
+            display: flex;
+            justify-content: center;
+            height: 150px;
+            width: 100%;
+            background-color: rgb(237, 233, 233);
+        }
+        .title{
+            font-size: 50px;
+            margin-top: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 7px;
+        }
+        .main{
+            width: 100%;
+            height: 470px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+        }
+        .main a{
+            text-decoration: none;
+            color: white;
+            font-size: 50px;
+            text-shadow: 2px 2px 5px black;
+        }
+        .men{
+            background-image: url("public/images/mens-shopping.jpeg");
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .women{
+            background-image: url("public/images/Women-fashion.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .kids{
+            background-image: url("public/images/kids-fashion.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mobile{
+            background-image: url("public/images/mobile-shopping.webp");
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="welcome">
+    
+    <div class="title">WELCOME TO SHOPPING ZONE</div>
+    
+    </div>
+    <div class="main">
+        <div class="men">
+            <div><a href="men.html" target="framebody">Men</a></div>
+        </div>
+        <div class="women">
+            <div><a href="women.html" target="framebody">Women</a></div>
+        </div>
+        <div class="kids">
+            <div><a href="kids.html" target="framebody">Kid's</a></div>
+        </div>
+        <div class="mobile">
+            <div><a href="mobile.html" target="framebody">Mobile</a></div>
+        </div>
+    </div>
+    
+</body>
+</html>
